@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful Class Routine</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:20px;
+    background:#f5f5f5;
+    font-family:"Times New Roman", serif;
+    overflow-x:auto;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.header h1{
+    margin:0;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.header p{
+    margin-top:5px;
+    font-size:18px;
+}
+
+/* TABLE */
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+}
+
+table{
+    min-width:1200px;
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+th, td{
+    border:2px solid #000;
+    padding:20px 15px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:16px;
+}
+
+th{
+    background:#222;
+    color:#fff;
+    font-size:20px;
+}
+
+.time{
+    background:#efefef;
+    font-weight:bold;
+    width:130px;
+    font-size:18px;
+}
+
+.break{
+    background:#cfcfcf;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.subject{
+    font-weight:bold;
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.teacher{
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* SUBJECT COLORS */
+
+.microbiology{
+    background:#f4a6a6;
+}
+
+.english{
+    background:#9fc5ff;
+}
+
+.anatomy{
+    background:#9fe0a3;
+}
+
+.fundamental{
+    background:#ffe27a;
+}
+
+.basicscience{
+    background:#c7a4ff;
+}
+
+.behavior{
+    background:#ffb3d9;
+}
+
+.ict{
+    background:#8ee7dc;
+}
+
+.ethics{
+    background:#ffbf80;
+}
+
+/* TODAY HIGHLIGHT */
+
+.faded{
+    filter:grayscale(100%);
+    opacity:0.25;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    margin-top:15px;
+    font-size:18px;
+}
+
+.footer span{
+    font-weight:bold;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    th, td{
+        padding:12px 10px;
+        font-size:14px;
+    }
+
+    .subject{
+        font-size:20px;
+    }
+
+    .teacher{
+        font-size:15px;
+    }
+
+}
+
+/* PRINT */
+
+@media print{
+
+    body{
+        padding:0;
+        background:#fff;
+    }
+
+    @page{
+        size:A4 landscape;
+        margin:8mm;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+    <h1>Islami Bank Nursing College, Rajshahi</h1>
+    <p>Weekly Class Routine</p>
+</div>
+
+<!-- TABLE -->
+
+<div class="table-container">
+
+<table>
+
+<tr>
+    <th>Day/Time</th>
+
+    <th class="day-column saturday">Saturday</th>
+    <th class="day-column sunday">Sunday</th>
+    <th class="day-column monday">Monday</th>
+    <th class="day-column tuesday">Tuesday</th>
+    <th class="day-column wednesday">Wednesday</th>
+    <th class="day-column thursday">Thursday</th>
+</tr>
+
+<!-- 9am-10am -->
+
+<tr>
+
+<td class="time">9am - 10am</td>
+
+<td class="day-column saturday microbiology">
+    <div class="subject">Microbiology</div>
+    <div class="teacher">
+        Khateba Khatun<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column sunday microbiology">
+    <div class="subject">Microbiology</div>
+    <div class="teacher">
+        Mst Nargis Akter Munni<br>
+        Clinical Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column monday english">
+    <div class="subject">English</div>
+    <div class="teacher">
+        Dilruba Khatun<br>
+        Lecturer (IBNC)
+    </div>
+</td>
+
+<td class="day-column tuesday microbiology">
+    <div class="subject">Microbiology</div>
+    <div class="teacher">
+        Khateba Khatun<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column wednesday anatomy">
+    <div class="subject">Anatomy & Physiology</div>
+    <div class="teacher">
+        Most. Sahida Khatun<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column thursday fundamental">
+    <div class="subject">Fun. Of Nursing</div>
+    <div class="teacher">
+        Asma Khatun<br>
+        Clinical Instructor (IBNC)
+    </div>
+</td>
+
+</tr>
+
+<!-- 10am-11am -->
+
+<tr>
+
+<td class="time">10am - 11am</td>
+
+<td class="day-column saturday ict">
+    <div class="subject">ICT</div>
+    <div class="teacher">
+        Sanjoy Kumar Chakrabarty<br>
+        Asst. Prof. RU
+    </div>
+</td>
+
+<td class="day-column sunday behavior">
+    <div class="subject">Behavioral Science</div>
+    <div class="teacher">
+        Mst. Sogira Kowsar<br>
+        Lecturer (IBNC)
+    </div>
+</td>
+
+<td class="day-column monday anatomy">
+    <div class="subject">Anatomy & Physiology</div>
+    <div class="teacher">
+        Dr. Shohiduzzaman Tomal<br>
+        Lecturer (IBMCH)
+    </div>
+</td>
+
+<td class="day-column tuesday basicscience">
+    <div class="subject">Basic Science</div>
+    <div class="teacher">
+        Mst. Sadia Akter<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column wednesday fundamental">
+    <div class="subject">Fun. Of Nursing</div>
+    <div class="teacher">
+        Karima Khatun<br>
+        Lecturer (IBNC)
+    </div>
+</td>
+
+<td class="day-column thursday ict">
+    <div class="subject">ICT</div>
+    <div class="teacher">
+        Newaz Shorif<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+</tr>
+
+<!-- 11am-12pm -->
+
+<tr>
+
+<td class="time">11am - 12pm</td>
+
+<td class="day-column saturday anatomy">
+    <div class="subject">Anatomy & Physiology</div>
+    <div class="teacher">
+        Jahura Khatun<br>
+        Lecturer (IBNC)
+    </div>
+</td>
+
+<td class="day-column sunday english">
+    <div class="subject">English</div>
+    <div class="teacher">
+        Dilruba Khatun<br>
+        Lecturer (IBNC)
+    </div>
+</td>
+
+<td class="day-column monday fundamental">
+    <div class="subject">Fun. Of Nursing</div>
+    <div class="teacher">
+        Maksuda Khatun<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column tuesday anatomy">
+    <div class="subject">Anatomy & Physiology</div>
+    <div class="teacher">
+        Most. Sahida Khatun<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column wednesday behavior">
+    <div class="subject">Behavioral Science</div>
+    <div class="teacher">
+        Mst. Jebunnesa<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column thursday microbiology">
+    <div class="subject">Microbiology</div>
+    <div class="teacher">
+        Mst Nargis Akter Munni<br>
+        Clinical Instructor (IBNC)
+    </div>
+</td>
+
+</tr>
+
+<!-- 12pm-1pm -->
+
+<tr>
+
+<td class="time">12pm - 1pm</td>
+
+<td class="day-column saturday behavior">
+    <div class="subject">Behavioral Science</div>
+    <div class="teacher">
+        Mst. Sogira Kowsar<br>
+        Lecturer (IBNC)
+    </div>
+</td>
+
+<td class="day-column sunday basicscience">
+    <div class="subject">Basic Science</div>
+    <div class="teacher">
+        Mehjabin Anjum Mishu<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column monday basicscience">
+    <div class="subject">Basic Science</div>
+    <div class="teacher">
+        Mehjabin Anjum Mishu<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column tuesday ict">
+    <div class="subject">ICT</div>
+    <div class="teacher">
+        Newaz Shorif<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column wednesday fundamental">
+    <div class="subject">Fun. Of Nursing</div>
+    <div class="teacher">
+        Asma Khatun<br>
+        Clinical Instructor (IBNC)
+    </div>
+</td>
+
+<td class="day-column thursday basicscience">
+    <div class="subject">Basic Science</div>
+    <div class="teacher">
+        Mst. Sadia Akter<br>
+        Nursing Instructor (IBNC)
+    </div>
+</td>
+
+</tr>
+
+<!-- BREAK -->
+
+<tr>
+
+<td class="time">1pm - 2pm</td>
+
+<td class="break">Break</td>
+<td class="break">Break</td>
+<td class="break">Break</td>
+<td class="break">Break</td>
+<td class="break">Break</td>
+<td class="break">Break</td>
+
+</tr>
+
+<!-- 2pm-3pm -->
+
+<tr>
+
+<td class="time">2pm - 3pm</td>
+
+<td></td>
+<td></td>
+<td></td>
+
+<td class="day-column tuesday ethics">
+    <div class="subject">Ethics</div>
+    <div class="teacher">
+        Maolana Abdul Haque<br>
+        Asst. Prof.
+    </div>
+</td>
+
+<td></td>
+<td></td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+    Created By <span>MD SHAOUN HASNAT</span>
+</div>
+
+<!-- AUTO TODAY HIGHLIGHT -->
+
+<script>
+
+const days = [
+    "sunday",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday"
+];
+
+const today = new Date().getDay();
+
+const todayClass = days[today];
+
+document.querySelectorAll(".day-column").forEach(el => {
+
+    if(!el.classList.contains(todayClass)){
+
+        el.classList.add("faded");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
