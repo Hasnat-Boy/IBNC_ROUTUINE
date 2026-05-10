@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Colorful Class Routine</title>
+<title>IBNC Routine</title>
 
 <style>
 
@@ -53,6 +53,7 @@ th, td{
     text-align:center;
     vertical-align:middle;
     font-size:16px;
+    transition:0.5s;
 }
 
 th{
@@ -119,11 +120,55 @@ th{
     background:#ffbf80;
 }
 
-/* TODAY HIGHLIGHT */
+/* TODAY ACTIVE ANIMATION */
+
+.active-day{
+    animation:activeGlow 1.2s ease;
+    position:relative;
+    z-index:2;
+    box-shadow:0 0 20px rgba(0,0,0,0.25);
+}
+
+/* OTHER DAYS */
 
 .faded{
-    filter:grayscale(100%);
-    opacity:0.25;
+    animation:fadeGray 1.5s ease forwards;
+}
+
+/* ACTIVE EFFECT */
+
+@keyframes activeGlow{
+
+    0%{
+        transform:scale(0.8);
+        opacity:0;
+    }
+
+    50%{
+        transform:scale(1.03);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* FADE EFFECT */
+
+@keyframes fadeGray{
+
+    from{
+        opacity:1;
+        filter:grayscale(0%);
+    }
+
+    to{
+        opacity:0.25;
+        filter:grayscale(100%);
+    }
+
 }
 
 /* FOOTER */
@@ -494,7 +539,11 @@ const todayClass = days[today];
 
 document.querySelectorAll(".day-column").forEach(el => {
 
-    if(!el.classList.contains(todayClass)){
+    if(el.classList.contains(todayClass)){
+
+        el.classList.add("active-day");
+
+    }else{
 
         el.classList.add("faded");
 
